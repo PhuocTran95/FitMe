@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffffff"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/txt_size_edit_header"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/header_text"/>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:layout_height="50dp"
+            android:layout_weight="2.0"
+            android:layout_width="100dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/calc"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="match_parent"
+            android:layout_weight="2.0"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp">
+
+            <EditText
+                android:id="@+id/txt_size_edit_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Size"
+                android:inputType="text"
+                android:maxLength="50"/>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:layout_height="50dp"
+            android:layout_weight="2.0"
+            android:layout_width="100dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/notes"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="150dp"
+            android:layout_weight="2.0"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp">
+
+            <EditText
+                android:hint="@string/notes"
+                android:id="@+id/txt_size_edit_note"
+                android:inputType="textMultiLine"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:scrollbars="vertical"/>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_size_edit_save"
+            style="@style/FlatButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <Button
+            android:id="@+id/btn_size_edit_cancel"
+            style="@style/FlatButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/close"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</LinearLayout>

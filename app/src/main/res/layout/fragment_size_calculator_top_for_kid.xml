@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:contentDescription="@string/chest"
+            android:layout_height="50dp"
+            android:layout_weight="2.0"
+            android:layout_width="100dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/chest"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="match_parent"
+            android:layout_weight="2.0"
+            android:layout_width="match_parent">
+
+            <EditText
+                android:hint="@string/chest"
+                android:id="@+id/top_kid_chest"
+                android:inputType="numberDecimal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:contentDescription="@string/height"
+            android:layout_height="50dp"
+            android:layout_weight="2.0"
+            android:layout_width="100dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/height"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="match_parent"
+            android:layout_weight="2.0"
+            android:layout_width="match_parent">
+
+            <EditText
+                android:hint="@string/height"
+                android:id="@+id/top_kid_height"
+                android:inputType="numberDecimal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:contentDescription="@string/ethnic"
+            android:layout_height="50dp"
+            android:layout_weight="2.0"
+            android:layout_width="100dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/earth"/>
+
+        <RadioGroup
+            android:checkedButton="@+id/top_kid_asian"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0"
+            android:layout_width="match_parent">
+
+            <RadioButton
+                android:checked="false"
+                android:id="@+id/top_kid_asian"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:layout_width="wrap_content"
+                android:textColor="@color/subColor"
+                android:text="@string/result_message_asian"/>
+
+            <RadioButton
+                android:id="@+id/top_kid_non_asian"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:layout_width="wrap_content"
+                android:textColor="@color/subColor"
+                android:text="@string/result_message_non_asian"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:contentDescription="@string/gender"
+            android:layout_height="50dp"
+            android:layout_weight="2.0"
+            android:layout_width="100dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/gender"/>
+
+        <RadioGroup
+            android:checkedButton="@+id/top_kid_male"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0"
+            android:layout_width="match_parent">
+
+            <RadioButton
+                android:checked="false"
+                android:id="@+id/top_kid_male"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:layout_width="wrap_content"
+                android:textColor="@color/subColor"
+                android:text="@string/boy"/>
+
+            <RadioButton
+                android:id="@+id/top_kid_female"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:layout_width="wrap_content"
+                android:textColor="@color/subColor"
+                android:text="@string/girl"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:background="@color/colorAccent"
+        android:id="@+id/btn_top_kid"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:text="@string/calculate"
+        android:textColor="@android:color/white"/>
+</LinearLayout>
+    </ScrollView>

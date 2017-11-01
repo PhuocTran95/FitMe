@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/shirt" android:id="@+id/navigation_tops" android:title="@string/nav_tops" />
+    <item android:icon="@drawable/pants" android:id="@+id/navigation_bottoms" android:title="@string/nav_bottoms" />
+    <item android:icon="@drawable/shoe" android:id="@+id/navigation_shoe" android:title="@string/nav_shoe" />
+    <item android:icon="@drawable/hat" android:id="@+id/navigation_hat" android:title="@string/nav_hat" />
+    <item android:icon="@drawable/ring" android:id="@+id/navigation_ring" android:title="@string/nav_ring" />
+</menu>

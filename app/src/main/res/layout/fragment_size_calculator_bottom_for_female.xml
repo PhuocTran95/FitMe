@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:contentDescription="@string/waist"
+            android:layout_height="50dp"
+            android:layout_weight="2.0"
+            android:layout_width="100dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/waist"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="match_parent"
+            android:layout_weight="2.0"
+            android:layout_width="match_parent">
+
+            <EditText
+                android:hint="@string/waist"
+                android:id="@+id/bottom_female_waist"
+                android:inputType="numberDecimal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:contentDescription="@string/hip"
+            android:layout_height="50dp"
+            android:layout_weight="2.0"
+            android:layout_width="100dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/hip"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="match_parent"
+            android:layout_weight="2.0"
+            android:layout_width="match_parent">
+
+            <EditText
+                android:hint="@string/hip"
+                android:id="@+id/bottom_female_hips"
+                android:inputType="numberDecimal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:contentDescription="@string/ethnic"
+            android:layout_height="50dp"
+            android:layout_weight="2.0"
+            android:layout_width="100dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/earth"/>
+
+        <RadioGroup
+            android:checkedButton="@+id/bottom_female_asian"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0"
+            android:layout_width="match_parent">
+
+            <RadioButton
+                android:checked="false"
+                android:id="@+id/bottom_female_asian"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:layout_width="wrap_content"
+                android:textColor="@color/subColor"
+                android:text="@string/result_message_asian"/>
+
+            <RadioButton
+                android:id="@+id/bottom_female_non_asian"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:textColor="@color/subColor"
+                android:layout_width="wrap_content"
+                android:text="@string/result_message_non_asian"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:background="@color/colorAccent"
+        android:id="@+id/btn_bottom_female"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:text="@string/calculate"
+        android:textColor="@android:color/white"/>
+</LinearLayout>
+    </ScrollView>
